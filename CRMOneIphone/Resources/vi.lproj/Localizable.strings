@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  CRMOneIphone
+
+  Created by viettel on 2/9/15.
+  Copyright (c) 2015 com.viettel. All rights reserved.
+*/
+
+
+//login
+"KEY_ACCOUNT" = "Tài khoản";
+"KEY_PASSWORD" = "Mật khẩu";
+"KEY_LOGIN" = "Đăng nhập";
+"KEY_ABOUT" = "Giới thiệu";
+
+//menu
+"MENU_FUNCTION_DASHBOARD" = "     DASHBOARD";
+"MENU_GROUP_CUSTOMER" = "     KHÁCH HÀNG";
+"MENU_FUNCTION_ACCOUNTLEAD" = "           Khách hàng tiềm năng";
+"MENU_FUNCTION_ACCOUNT360" = "           Khách hàng 360";
+"MENU_FUNCTION_OPPORTUNITY" = "           Cơ hội bán hàng";
+"MENU_FUNCTION_MAP" = "           Bản đồ khách hàng";
+"MENU_GROUP_ACTION_SALE" = "     HOẠT ĐỘNG BÁN HÀNG";
+"MENU_FUNCTION_TASK" = "           Công việc";
+"MENU_FUNCTION_CALENDAR" = "           Lịch";
+"MENU_GROUP_UTILITY" = "     TIỆN ÍCH";
+"MENU_FUNCTION_REPORT" = "           Báo cáo";
+"MENU_FUNCTION_SETTING" = "           Thiết lập";
+"MENU_FUNCTION_OPTION_REPLY" = "           Ý kiến phản hồi";
+"MENU_FUNCTION_HELP" = "           Trợ giúp";
+"MENU_GROUP_SYSTEM" = "     HỆ THỐNG";
+"MENU_FUNCTION_SYNC" = "           Đồng bộ";
+"MENU_FUNCTION_CANCEL" = "           Thoát";
+
+
+"KEY_ALERTVIEW_DELETE_MESSAGE" = "chắc chắn muốn xóa công việc?";
+"KEY_ALERTVIEW_DELETE_CANCEL" = "Hủy";
+"KEY_ALERTVIEW_DELETE_OK" = "Đồng ý";
+
+"KEY_Edit" = "Sửa";
+"KEY_Delete" = "Xóa";
+
+//ALL
+"KEY_UPDATE" = "Cập nhật";
+"KEY_CANCEL" = "Hủy";
+"KEY_SEARCH" = "Tìm kiếm";
+"KEY_TOTAL" = "Tổng số";
+
+//stop task
+"KEY_STOP_TASK_TITLE" = "XÁC NHẬN LÝ DO DỪNG CÔNG VIỆC";
+"KEY_STOP_TASK_REASON" = "Lý do dừng công việc";
+
+"KEY_ALERT_SUMMARY" = "Đồng chí có muốn đăng xuất không ?";
+"KEY_ALERT_YES" = "Có";
+"KEY_ALERT_NO" = "Không";
+"KEY_ALERT_TITLE" = "Thông báo";
+"KEY_ALERT_WARMING" = "Cảnh báo";
+"KEY_ALERT_REINPUT" = "Nhâp lại";
+"KEY_ALERT_INVAID_DATA" = "Nhập sai dữ liệu";
+"KEY_ALERT_CANCEL" = "Thoát";
+"KEY_ALERT_CLOSE" = "Đóng";
+"KEY_ALERT_IGNOR" = "Huỷ bỏ";
+"KEY_ALERT_ACCEPT" = "Đồng ý";
+
+
+"KEY_NOTIFICATION_UPDATE_SUCCESS" = "Cập nhật thành công";
+"KEY_NOTIFICATION_UPDATE_FAIL" = "Cập nhật không thành công";
+
+
+
+//ghi chú
+"KEY_NOTE_ADD"="THÊM MỚI GHI CHÚ";
+"KEY_NOTE_EDIT"="CẬP NHẬP GHI CHÚ";
+"KEY_NOTE_TITLE"="Tiêu đề";
+"KEY_NOTE_CONTENT"="Nội dung";
+"KEY_NOTE_FILE"="File đính kèm";
+//quick menu
+"KEY_QUICK_VIEW"="Xem";
+"KEY_QUICK_EDIT"="Sửa";
+"KEY_QUICK_DEL"="Xoá";
+"KEY_QUICK_CALL"="Gọi điện";
+"KEY_QUICK_SMS"="Sms";
+"KEY_QUICK_EMAIL"="Email";
+"KEY_QUICK_FOLLOW"="Theo dõi";
+"KEY_QUICK_MAPS"="Bản đồ";
+//lien he
+"KEY_CONTACT_ADD"="Thêm mới liên hệ";
+"KEY_CONTACT_EDIT"="Cập nhập liên hệ";
+"KEY_CONTACT_NAME"="Họ và tên";
+"KEY_CONTACT_POSITION"="Chức danh";
+"KEY_CONTACT_PHONE"="Số điện thoại";
+"KEY_CONTACT_CMT"="Chứng minh thư";
+"KEY_CONTACT_CMT_DATE"="Ngày cấp";
+"KEY_CONTACT_BIRTH"="Nơi sinh";
+"KEY_CONTACT_BIRTH_DAY"="Ngày sinh";
+"KEY_CONTACT_EMAIL"="Email";
+"KEY_CONTACT_ADDRESS"="Địa chỉ";
+"KEY_CONTACT_NOTE"="Ghi chú";
+"KEY_CONTACT_AVARTAR"="Chọn ảnh";
+//chi tiết khách hàng 360
+"KEY_360_CODE"="Mã khách hàng";
+"KEY_360_NAME"="Tên khách hàng";
+"KEY_360_SO_DKKD"="Số ĐKKD";
+"KEY_360_NGAY_DKKD"="Ngày ĐKKD";
+"KEY_360_MOBILE"="Điện thoại";
+"KEY_360_FAX"="Fax";
+"KEY_360_ADDRESS"="Địa chỉ";
+"KEY_360_SECTOR"="Tên gợi nhớ";
+"KEY_360_LOAI_HINH_DN"="Loại hình doanh nghiệp";
+"KEY_360_CHI_NHANH_QUAN_LY"="Chi nhánh quản lý";
+"KEY_360_NGAY_MO_CODE"="Ngày mở code";
+"KEY_360_QUOCGIA"="Quốc gia";
+"KEY_360_TINH_THANHPHO"="Tỉnh/thành phố";
+"KEY_360_QUAN_HUYEN"="Quận/huyện";
+"KEY_360_PHUONG_XA"="Phường/xã";
+"KEY_360_KHONG_LIEN_LAC"="Không liên lạc qua";
+"KEY_360_THONG_TIN_KHACH_HANG"="Thông tin khách hàng";
+
+//KHACH HÀNG TIỀM NĂNG + 360
+"KEY_CUSTOMER_TYPE_ALL"="Tất cả";
+"KEY_CUSTOMER_TYPE_PERSON"="Khách hàng cá nhân";
+"KEY_CUSTOMER_TYPE_BUSSINESS"="Khách hàng doanh nghiệp";
+
+"KEY_TEXT_HEADER_ADD_CUSTOMER_PERSON"="THÊM MỚI KHÁCH HÀNG CÁ NHÂN";
+"KEY_TEXT_HEADER_EDIT_CUSTOMER_PERSON"="SỬA KHÁCH HÀNG CÁ NHÂN";
+
+
+

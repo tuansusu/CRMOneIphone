@@ -1,0 +1,71 @@
+//
+// Prefix header
+//
+// The contents of this file are implicitly
+// included at the beginning of every source file
+//
+
+//#import
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "SDiPhoneVersion.h"
+#import "UIDevice+extend.h"
+
+//hang so
+#import "Constants.h"
+#import "GraphicName.h"
+#import "DataField.h"
+#import "StringLocalization.h"
+
+#import "SDiPhoneVersion.h"
+
+//util
+#import "StringUtil.h"
+#import "LogUtil.h"
+
+
+#import "DateUtil.h"
+//#import "InterfaceUtil.h"
+
+#import "GraphicName.h"
+#import "Util.h"
+#import "NSString+extend.h"
+#import "UILabel+extend.h"
+//#import "GlobalVars.h"
+////custom control
+#import "UIButton+Custom.h"
+#import "UILabel+Custom.h"
+#import "UIImage+Custom.h"
+#import "UIView+Custom.h"
+#import "UITextField+Custom.h"
+#import "UITextView+Custom.h"
+
+#import "DataField.h"
+#import "AlertViewUtils.h"
+////#import "Network.h"
+////#import "Reachability.h"
+#import "UIAlertView+Blocks.h"
+#import "UIImageView+ForScrollView.h"
+//
+//#import "DDMenuController.h"
+////#import "FrameworkAppDelegate.h"
+////
+#import "MMDrawerController.h"
+#import "UIViewController+MMDrawerController.h"
+////language
+#import "Language.h"
+#import "LocalizeHelper.h"
+
+
+#endif

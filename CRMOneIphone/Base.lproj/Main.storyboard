@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Dw-HG-FlM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QBr-ku-zs2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_login.png" translatesAutoresizingMaskIntoConstraints="NO" id="A7t-D2-zeQ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1280"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-ba-Ojo">
+                                <rect key="frame" x="134" y="20" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Tiếng Việt">
+                                    <color key="titleColor" red="0.98823535439999999" green="0.98039221759999995" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vietnamLanguageChoose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="50T-0I-cK0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRT-a8-YlF">
+                                <rect key="frame" x="224" y="20" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="biP-OB-7BT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="English">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishLanguageChoose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f5B-dW-jjD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lv5-MO-TVb">
+                                <rect key="frame" x="0.0" y="83" width="320" height="280"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="login-id.png" translatesAutoresizingMaskIntoConstraints="NO" id="2d4-vn-PLz">
+                                        <rect key="frame" x="45" y="81" width="230" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Dle-0s-ihf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tài khoản" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-Hz-2at">
+                                        <rect key="frame" x="83" y="81" width="192" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="P4m-Qj-1CJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="DFt-iI-uwv"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="login-pass.png" translatesAutoresizingMaskIntoConstraints="NO" id="5wh-Vq-8ey">
+                                        <rect key="frame" x="45" y="134" width="230" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5jv-Y6-MId"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oic-KZ-itU">
+                                        <rect key="frame" x="83" y="134" width="192" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0UL-m7-dvL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="r5T-BR-MpO"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-IH-VUa">
+                                        <rect key="frame" x="45" y="187" width="230" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="uEb-NO-Foy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Đăng nhập">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="login_click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i1Q-aS-E7B"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo_login-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8JB-1G-Swy">
+                                        <rect key="frame" x="135" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FGR-bz-v7N"/>
+                                            <constraint firstAttribute="width" constant="50" id="vUf-Y1-fsC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Gen-Hz-2at" firstAttribute="leading" secondItem="lv5-MO-TVb" secondAttribute="leading" constant="83" id="Aiz-fw-GNH"/>
+                                    <constraint firstItem="8JB-1G-Swy" firstAttribute="centerX" secondItem="9ed-IH-VUa" secondAttribute="centerX" id="Amc-uc-MYS"/>
+                                    <constraint firstItem="oic-KZ-itU" firstAttribute="leading" secondItem="lv5-MO-TVb" secondAttribute="leading" constant="83" id="BCg-Kf-xUp"/>
+                                    <constraint firstAttribute="height" constant="280" id="BeD-5U-lPv"/>
+                                    <constraint firstAttribute="centerX" secondItem="9ed-IH-VUa" secondAttribute="centerX" id="G6K-BN-pfU"/>
+                                    <constraint firstAttribute="trailing" secondItem="2d4-vn-PLz" secondAttribute="trailing" constant="45" id="Laq-2w-jhw"/>
+                                    <constraint firstItem="5wh-Vq-8ey" firstAttribute="leading" secondItem="lv5-MO-TVb" secondAttribute="leading" constant="45" id="TZ9-qm-RC5"/>
+                                    <constraint firstAttribute="trailing" secondItem="5wh-Vq-8ey" secondAttribute="trailing" constant="45" id="Xve-it-6u8"/>
+                                    <constraint firstItem="8JB-1G-Swy" firstAttribute="top" secondItem="lv5-MO-TVb" secondAttribute="top" constant="8" id="eKB-NG-PUV"/>
+                                    <constraint firstItem="2d4-vn-PLz" firstAttribute="leading" secondItem="lv5-MO-TVb" secondAttribute="leading" constant="45" id="hxR-3D-p9s"/>
+                                    <constraint firstAttribute="centerX" secondItem="8JB-1G-Swy" secondAttribute="centerX" id="lcQ-3V-Qhh"/>
+                                    <constraint firstAttribute="trailing" secondItem="oic-KZ-itU" secondAttribute="trailing" constant="45" id="tam-Rm-ZMv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gen-Hz-2at" secondAttribute="trailing" constant="45" id="uuF-d8-Pra"/>
+                                </constraints>
+                            </view>
+                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwF-xg-BeF">
+                                <rect key="frame" x="90" y="336" width="140" height="140"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SRT-a8-YlF" firstAttribute="leading" secondItem="jQk-ba-Ojo" secondAttribute="trailing" constant="10" id="0sR-8o-SeW"/>
+                            <constraint firstItem="SRT-a8-YlF" firstAttribute="baseline" secondItem="jQk-ba-Ojo" secondAttribute="baseline" id="Avk-11-qai"/>
+                            <constraint firstItem="SRT-a8-YlF" firstAttribute="top" secondItem="1Dw-HG-FlM" secondAttribute="bottom" id="NXV-qs-u1F"/>
+                            <constraint firstAttribute="trailing" secondItem="SRT-a8-YlF" secondAttribute="trailing" constant="16" id="Qem-6Y-Lcq"/>
+                            <constraint firstItem="lv5-MO-TVb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="UVG-xr-pHX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lv5-MO-TVb" secondAttribute="trailing" id="Wfq-2t-ICm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="9ed-IH-VUa" id="qma-Ry-4Iw"/>
+                        <outlet property="imgBackGroundPassword" destination="5wh-Vq-8ey" id="IVh-sO-uzh"/>
+                        <outlet property="imgBackGroundUserName" destination="2d4-vn-PLz" id="DZW-PH-VuW"/>
+                        <outlet property="imgLogo" destination="8JB-1G-Swy" id="qYf-DR-XUe"/>
+                        <outlet property="tf_password" destination="oic-KZ-itU" id="I4m-4m-O55"/>
+                        <outlet property="tf_username" destination="Gen-Hz-2at" id="qGq-UC-SLv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="336.99999999999994"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_login.png" width="768" height="1280"/>
+        <image name="login-id.png" width="550" height="92"/>
+        <image name="login-pass.png" width="550" height="92"/>
+        <image name="logo_login-1.png" width="78" height="78"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
