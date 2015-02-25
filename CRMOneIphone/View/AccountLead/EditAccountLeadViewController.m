@@ -91,9 +91,9 @@
     _latitude=0;
     _longitude=0;
     [super viewDidLoad];
-    if ([UIDevice getCurrentSysVer] >= 7.0) {
-        [UIDevice updateLayoutInIOs7OrAfter:self];
-    }
+//    if ([UIDevice getCurrentSysVer] >= 7.0) {
+//        [UIDevice updateLayoutInIOs7OrAfter:self];
+//    }
     util=[Util new];
     defaults = [NSUserDefaults standardUserDefaults];
     [defaults synchronize];
@@ -104,9 +104,36 @@
     
     
     //TINH TOAN THEO MAN HINH
-    self.bodyMainView.contentSize = CGSizeMake(self.bodyMainView.frame.size.width, 813);
+    self.bodyMainView.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width, 813);
+    
+    NSLog(@"screen width = %f", [[UIScreen mainScreen] bounds].size.width);
+    self.layoutWidthViewMainBodyInfo.constant =[[UIScreen mainScreen] bounds].size.width;
+    
+    if (IPHONE_SCREEN_SIZE_35INCH) {
+        NSLog(@"IPHONE_SCREEN_SIZE_35INCH = %f", self.bodyMainView.frame.size.width);
+    }else if (IPHONE_SCREEN_SIZE_4INCH){
+        NSLog(@"IPHONE_SCREEN_SIZE_4INCH = %f", self.bodyMainView.frame.size.width);
+    }else if(IPHONE_SCREEN_SIZE_47INCH){
+        NSLog(@"IPHONE_SCREEN_SIZE_47INCH = %f", self.bodyMainView.frame.size.width);
+    }else if (IPHONE_SCREEN_SIZE_55INCH){
+        NSLog(@"IPHONE_SCREEN_SIZE_55INCH = %f", self.bodyMainView.frame.size.width);
+    }else if(IPHONE_SCREEN_SIZE_UNKNOW){
+        NSLog(@"IPHONE_SCREEN_SIZE_UNKNOW = %f", self.bodyMainView.frame.size.width);
+    }
+    
+    
+    
     
 }
+
+-(void) viewDidAppear:(BOOL)animated{
+//    self.viewMainBodyInfo.frame =  CGRectMake(self.viewMainBodyInfo.frame.origin.x, self.viewMainBodyInfo.frame.origin.y, [[UIScreen mainScreen] bounds].size.width, self.viewMainBodyInfo.frame.size.height);
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    //self.viewMainBodyInfo.frame =  CGRectMake(self.viewMainBodyInfo.frame.origin.x, self.viewMainBodyInfo.frame.origin.y, [[UIScreen mainScreen] bounds].size.width, self.viewMainBodyInfo.frame.size.height);
+}
+
 //khoi tao gia tri mac dinh cua form
 -(void) initData {
     
@@ -259,7 +286,16 @@
     self.bodyMainView.layer.borderWidth = BORDER_WITH;
     self.bodyMainView.layer.borderColor = [BORDER_COLOR CGColor];
     
-    [self.btnSave setStyleNormalWithOption:smgSelect];
+    //[self.btnSave setStyleNormalWithOption:smgSelect];
+    
+    
+    for (UIView *viewTemp in self.headerViewBar.subviews) {
+            if ([viewTemp isKindOfClass:[UIImageView class]]) {
+                [((UIImageView*) viewTemp) setAlpha:1.0f];
+                continue;
+            }
+    }
+    
     
     for (UIView *viewTemp in self.bodyMainView.subviews) {
         
@@ -744,29 +780,29 @@
 }
 
 #pragma mark SelectMap Delegate
--(void) selectAddress:(GMSAddress *)addressObj{
-    
-    NSLog(@"coordinate.latitude=%f", addressObj.coordinate.latitude);
-    NSLog(@"coordinate.longitude=%f", addressObj.coordinate.longitude);
-    NSLog(@"thoroughfare=%@", addressObj.thoroughfare);
-    NSLog(@"locality=%@", addressObj.locality);
-    NSLog(@"subLocality=%@", addressObj.subLocality);
-    NSLog(@"administrativeArea=%@", addressObj.administrativeArea);
-    NSLog(@"postalCode=%@", addressObj.postalCode);
-    NSLog(@"country=%@", addressObj.country);
-    NSLog(@"lines=%@", addressObj.lines);
-    
-    
-    _longitude = addressObj.coordinate.longitude;
-    _latitude = addressObj.coordinate.latitude;
-    
-    
-    
-    if (addressObj.lines.count>0) {
-        self.txtAddress.text =[addressObj.lines objectAtIndex:0];
-    }
-    
-}
+//-(void) selectAddress:(GMSAddress *)addressObj{
+//    
+//    NSLog(@"coordinate.latitude=%f", addressObj.coordinate.latitude);
+//    NSLog(@"coordinate.longitude=%f", addressObj.coordinate.longitude);
+//    NSLog(@"thoroughfare=%@", addressObj.thoroughfare);
+//    NSLog(@"locality=%@", addressObj.locality);
+//    NSLog(@"subLocality=%@", addressObj.subLocality);
+//    NSLog(@"administrativeArea=%@", addressObj.administrativeArea);
+//    NSLog(@"postalCode=%@", addressObj.postalCode);
+//    NSLog(@"country=%@", addressObj.country);
+//    NSLog(@"lines=%@", addressObj.lines);
+//    
+//    
+//    _longitude = addressObj.coordinate.longitude;
+//    _latitude = addressObj.coordinate.latitude;
+//    
+//    
+//    
+//    if (addressObj.lines.count>0) {
+//        self.txtAddress.text =[addressObj.lines objectAtIndex:0];
+//    }
+//    
+//}
 
 - (IBAction)actionCheckMobile:(id)sender {
     if(isPhone==NO){

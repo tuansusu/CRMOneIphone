@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 
-#import <GoogleMaps/GoogleMaps.h>
-#import "SDKDemoAPIKey.h"
+//#import <GoogleMaps/GoogleMaps.h>
+//#import "SDKDemoAPIKey.h"
 
 @interface AppDelegate ()
 

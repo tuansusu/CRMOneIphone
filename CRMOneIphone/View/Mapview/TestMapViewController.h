@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GoogleMaps/GoogleMaps.h>
+//#import <GoogleMaps/GoogleMaps.h>
 #import <MessageUI/MessageUI.h>
 
 
@@ -36,7 +36,7 @@ enum TypeMapView{
 
 @protocol SelectMapDelegate <NSObject>
 @optional
--(void) selectAddress: (GMSAddress*) gmsAddress;
+//-(void) selectAddress: (GMSAddress*) gmsAddress;
 @end
 
 

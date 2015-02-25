@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,14 +15,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEu-cM-wil" userLabel="Label - name">
-                        <rect key="frame" x="10" y="5" width="280" height="25"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEu-cM-wil" userLabel="Label - name">
+                        <rect key="frame" x="10" y="5" width="300" height="25"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evl-04-BOZ" userLabel="Button - call">
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evl-04-BOZ" userLabel="Button - call">
                         <rect key="frame" x="10" y="35" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="3UM-S9-yiU"/>
+                            <constraint firstAttribute="width" constant="32" id="UiS-iA-bYS"/>
+                        </constraints>
                         <state key="normal" title="Button" backgroundImage="call.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -31,7 +36,7 @@
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-WT-ifI" userLabel="Button - sms">
                         <rect key="frame" x="50" y="35" width="32" height="32"/>
-                        <state key="normal" title="Button" backgroundImage="email_icon_hide.png">
+                        <state key="normal" backgroundImage="email_icon_hide.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                         <connections>
@@ -39,13 +44,17 @@
                         </connections>
                     </button>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0167.452.4359" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtz-N9-hnR" userLabel="Label - phone">
-                        <rect key="frame" x="90" y="38" width="200" height="25"/>
+                        <rect key="frame" x="90" y="38" width="180" height="25"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQb-7l-M8O" userLabel="Button - map">
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQb-7l-M8O" userLabel="Button - map">
                         <rect key="frame" x="10" y="73" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="TNe-JB-zBq"/>
+                            <constraint firstAttribute="width" constant="32" id="ZlL-2f-Kid"/>
+                        </constraints>
                         <state key="normal" title="Button" backgroundImage="pin.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -54,13 +63,17 @@
                         </connections>
                     </button>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTR-Ou-44p" userLabel="Label - address">
-                        <rect key="frame" x="50" y="76" width="240" height="25"/>
+                        <rect key="frame" x="50" y="76" width="262" height="25"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H26-hA-asw" userLabel="Button - flow">
-                        <rect key="frame" x="280" y="35" width="32" height="32"/>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H26-hA-asw" userLabel="Button - flow">
+                        <rect key="frame" x="278" y="35" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="f6l-TW-HUD"/>
+                            <constraint firstAttribute="height" constant="32" id="j8W-od-BEM"/>
+                        </constraints>
                         <state key="normal" title="Button">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -69,8 +82,18 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dEu-cM-wil" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5ir-0X-rJ2"/>
+                    <constraint firstItem="H26-hA-asw" firstAttribute="top" secondItem="dEu-cM-wil" secondAttribute="bottom" constant="5" id="Hrc-Th-bBm"/>
+                    <constraint firstAttribute="trailing" secondItem="dEu-cM-wil" secondAttribute="trailing" constant="10" id="PTz-rJ-b1x"/>
+                    <constraint firstItem="AQb-7l-M8O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="e7y-Sk-OLB"/>
+                    <constraint firstItem="evl-04-BOZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fYK-cb-81m"/>
+                    <constraint firstItem="dEu-cM-wil" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="idW-0m-yrk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="H26-hA-asw" secondAttribute="trailing" constant="8" id="rK6-pa-XJk"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="btnFollow" destination="H26-hA-asw" id="Kg4-g4-u56"/>
                 <outlet property="lbAddress" destination="lTR-Ou-44p" id="TEB-bT-pmf"/>
                 <outlet property="lbName" destination="dEu-cM-wil" id="jAN-45-dxn"/>
                 <outlet property="lbPhone" destination="Rtz-N9-hnR" id="BFo-hB-lof"/>

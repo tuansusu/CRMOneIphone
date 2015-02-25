@@ -223,7 +223,7 @@
         return 50.0f;
     }
     else {
-        return 100.0f;
+        return 110.0f;
     }
     
     

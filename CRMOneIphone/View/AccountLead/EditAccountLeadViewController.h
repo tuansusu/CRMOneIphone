@@ -42,6 +42,9 @@
 //@property (weak, nonatomic) IBOutlet UIScrollView *bodyMainView;
 
 @property (weak, nonatomic) IBOutlet UIView *viewMainBodyInfo;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *layoutWidthViewMainBodyInfo;
+
 //@property (weak, nonatomic) IBOutlet UIView *viewExpandInfo;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnSave;

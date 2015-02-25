@@ -54,6 +54,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.menuView2 setBackgroundColor:TOOLBAR_VIEW_COLOR];
+    
     [self updateInterFaceWithOption:1];
 }
 
@@ -153,7 +155,6 @@
             
             [((UIImageView*) viewTemp) setAlpha:1.0f];
             
-            NSLog(@"image set alpha");
             
             continue;
         }
